@@ -1,0 +1,15 @@
+footer{
+  background: #070707 !important ;
+  padding: 8px;
+  border-top: solid red;
+}
+.Navigation{
+  border-bottom: solid red !important;
+  padding: 15px;
+  background: #070707    !important;
+  font-size:40px !important;
+}
+.search{
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif
+}

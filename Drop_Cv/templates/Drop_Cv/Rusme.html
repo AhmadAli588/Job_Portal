@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
 
+{% if message %}
+{{message}}
+{% endif %}
+
 {% if error %}
 {{error}}
 {% endif %}
@@ -117,18 +121,21 @@
                     <h2 class="title1" >Add Resume</h2>
                 </div>
                 <div class="card-body">
-                    <form method="POST">
+                    <form method="POST" action="{% url 'Resume' %}" enctype="multipart/form-data">
+
+                        {% csrf_token %}
+                        {{ form.as_p}}
                         <div class="form-row">
                             <div class="name">Full name</div>
                             <div class="value">
-                                <input class="input--style-6" type="text" name="full_name">
+                                <input class="input--style-6" type="text" name="full_name" id="full_name" REQUIRED>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="name">Email address</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-6" type="email" name="email" placeholder="example@email.com">
+                                    <input class="input--style-6" type="email" name="email" placeholder="example@email.com" id="email" REQUIRED>
                                 </div>
                             </div>
                         </div>
@@ -136,7 +143,7 @@
                             <div class="name">Message</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <textarea class="textarea--style-6" name="message" placeholder="Message sent to the employer"></textarea>
+                                    <textarea class="textarea--style-6" type="text" name="message" id="message" placeholder="Message sent to the employer"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -144,18 +151,22 @@
                             <div class="name">Upload CV</div>
                             <div class="value">
                                 <div class="input-group js-input-file">
-                                    <input class="input-file" type="file" name="file_cv" id="file">
+                                    <input class="input-file" type="file" name="file" id="file" REQUIRED>
                                     <label class="label--file" for="file">Choose file</label>
                                     <span class="input-file__info">No file chosen</span>
                                 </div>
                                 <div class="label--desc">Upload your CV/Resume or any other relevant file. Max file size 50 MB</div>
                             </div>
                         </div>
+                        <div class="card-footer">
+                          <button class="btn btn--radius-2 btn--blue-2" type="submit">Upload</button>
+                        </div>
                     </form>
+                    <h4>{{message}}</h4>
                 </div>
-                <div class="card-footer">
-                    <button class="btn btn--radius-2 btn--blue-2" type="submit">Upload</button>
-                </div>
+               <!-- <div class="card-footer">
+                    <button class="btn btn&#45;&#45;radius-2 btn&#45;&#45;blue-2" type="submit">Upload</button>
+                </div>-->
             </div>
         </div>
     </div>

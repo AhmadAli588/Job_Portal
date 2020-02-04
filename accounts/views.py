@@ -1,6 +1,14 @@
 from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
 from django.contrib import auth
+#from django.core.urlresolvers import reverse_lazy
+from django.views.generic import CreateView
+from . import form
+#class SignUp(CreateView):
+ #   form_class = form.UserCreateForm
+  #  success_url = redirect('signin')
+   # template_name = 'accounts/Sign_Up.html'
+
 def signup(request):
     if request.method=='POST':
        # First_Name=request.POST['FirstName']
@@ -16,9 +24,9 @@ def signup(request):
                 return render(request, 'accounts/Sign_Up.html', {'error': 'Email already taken'})
             else:
                 user=User.objects.create_user(request.POST['username'],request.POST['Uemail'],request.POST['pass'])
-                auth.login(request, user)
+                #auth.login(request, user)
                 user.save()
-                return redirect('home')
+                return redirect('signin')
         else:
             return render(request, 'accounts/Sign_Up.html', {'error': 'Password Does NOt Match'})
     else:

@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+
 ]
 
 MIDDLEWARE = [
@@ -85,6 +85,7 @@ WSGI_APPLICATION = 'Job_Portal.wsgi.application'
 
 
 # Database
+
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {

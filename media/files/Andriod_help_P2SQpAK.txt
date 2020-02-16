@@ -1,0 +1,14 @@
+TextView:
+ Width and Height types:
+   1.match_parent
+   2.wrap_content
+   3.
+For Giving size in the android we use
+	1.dp/sp
+sp:text ko sixe de ge
+dp:layout ko size de ge
+
+For Declare the veiw above the onclick and for initialize the view in the onclick
+
+To find the view  function used is findViewById 
+ 

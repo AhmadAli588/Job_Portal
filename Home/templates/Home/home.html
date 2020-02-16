@@ -1,186 +1,5 @@
 {% extends 'base.html' %}
 {% block content %}
-<!--<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>JobPortal - Free Bootstrap 4 Template by Colorlib</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
-    {%load static %}
-    <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css'%}">
-    <link rel="stylesheet" href="{% static 'css/animate.css'%}">
-
-    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
-    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
-    <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
-
-    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
-
-    <link rel="stylesheet" href="{% static 'css/ionicons.min.css'%}">
-
-    <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
-    <link rel="stylesheet" href="{% static 'css/jquery.timepicker.css'%}">
-
-
-    <link rel="stylesheet" href="{% static 'css/flaticon.css'%}">
-    <link rel="stylesheet" href="{% static 'css/icomoon.css'%}">
-    <link rel="stylesheet" href="{% static 'css/style.css'%}">
-	<link rel="stylesheet" href="{% static 'css/home.css'%}">
-  </head>
-<body>
-
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">JobPortal</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	          &lt;!&ndash;<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>&ndash;&gt;
-	         &lt;!&ndash; <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>&ndash;&gt;
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Sign In</a></li>
-	          <li class="nav-item cta mr-md-2"><a href="new-post.html" class="nav-link">Post a Job</a></li>
-	          <li class="nav-item cta cta-colored"><a href="job-post.html" class="nav-link">Want a Job</a></li>
-
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  {%load static%}
-      <div class="hero-wrap js-fullheight" style="background-image:url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
-          <div class="col-xl-10 ftco-animate mb-5 pb-5" data-scrollax=" properties: { translateY: '70%' }">
-          	<p class="mb-4 mt-5 pt-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We have <span class="number" data-number="850000">0</span> great job offers you deserve!</p>
-            <h1 class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Your Dream <br><span>Job is Waiting</span></h1>
-
-						<div class="ftco-search">
-							<div class="row">
-		            <div class="col-md-12 nav-link-wrap">
-			            <div class="nav nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-			              <a class="nav-link active mr-md-1" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Find a Job</a>
-
-			              <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Find a Candidate</a>
-
-			            </div>
-			          </div>
-			          <div class="col-md-12 tab-wrap">
-
-			            <div class="tab-content p-4" id="v-pills-tabContent">
-
-			              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
-			              	<form action="#" class="search-job">
-			              		<div class="row">
-			              			<div class="col-md">
-			              				<div class="form-group">
-				              				<div class="form-field">
-				              					<div class="icon"><span class="icon-briefcase"></span></div>
-								                <input type="text" class="form-control" placeholder="eg. Garphic. Web Developer">
-								              </div>
-							              </div>
-			              			</div>
-			              			<div class="col-md">
-			              				<div class="form-group">
-			              					<div class="form-field">
-				              					<div class="select-wrap">
-						                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-						                      <select name="" id="" class="form-control">
-						                      	<option value="">Category</option>
-						                      	<option value="">Full Time</option>
-						                        <option value="">Part Time</option>
-						                        <option value="">Freelance</option>
-						                        <option value="">Internship</option>
-						                        <option value="">Temporary</option>
-						                      </select>
-						                    </div>
-								              </div>
-							              </div>
-			              			</div>
-			              			<div class="col-md">
-			              				<div class="form-group">
-			              					<div class="form-field">
-				              					<div class="icon"><span class="icon-map-marker"></span></div>
-								                <input type="text" class="form-control" placeholder="Location">
-								              </div>
-							              </div>
-			              			</div>
-			              			<div class="col-md">
-			              				<div class="form-group">
-			              					<div class="form-field">
-								                <input type="submit" value="Search" class="form-control btn btn-primary">
-								              </div>
-							              </div>
-			              			</div>
-			              		</div>
-			              	</form>
-			              </div>
-
-			              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-performance-tab">
-			              	<form action="#" class="search-job">
-			              		<div class="row">
-			              			<div class="col-md">
-			              				<div class="form-group">
-				              				<div class="form-field">
-				              					<div class="icon"><span class="icon-user"></span></div>
-								                <input type="text" class="form-control" placeholder="eg. Adam Scott">
-								              </div>
-							              </div>
-			              			</div>
-			              			<div class="col-md">
-			              				<div class="form-group">
-			              					<div class="form-field">
-				              					<div class="select-wrap">
-						                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-						                      <select name="" id="" class="form-control">
-						                      	<option value="">Category</option>
-						                      	<option value="">Full Time</option>
-						                        <option value="">Part Time</option>
-						                        <option value="">Freelance</option>
-						                        <option value="">Internship</option>
-						                        <option value="">Temporary</option>
-						                      </select>
-						                    </div>
-								              </div>
-							              </div>
-			              			</div>
-			              			<div class="col-md">
-			              				<div class="form-group">
-			              					<div class="form-field">
-				              					<div class="icon"><span class="icon-map-marker"></span></div>
-								                <input type="text" class="form-control" placeholder="Location">
-								              </div>
-							              </div>
-			              			</div>
-			              			<div class="col-md">
-			              				<div class="form-group">
-			              					<div class="form-field">
-								                <input type="submit" value="Search" class="form-control btn btn-primary">
-								              </div>
-							              </div>
-			              			</div>
-			              		</div>
-			              	</form>
-			              </div>
-			            </div>
-			          </div>
-			        </div>
-		        </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-</body>-->
-
-
-
 <!--<!DOCTYPE.html>-->
 <html lang="en">
 <head>
@@ -193,93 +12,21 @@
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet" />
 
-    <!--<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
-    {%load static %}
-    <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css'%}">
-    <link rel="stylesheet" href="{% static 'css/animate.css'%}">
-
-    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
-    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
-    <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
-
-    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
-
-    <link rel="stylesheet" href="{% static 'css/ionicons.min.css'%}">
-
-    <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
-    <link rel="stylesheet" href="{% static 'css/jquery.timepicker.css'%}">
-
-
-    <link rel="stylesheet" href="{% static 'css/flaticon.css'%}">
-    <link rel="stylesheet" href="{% static 'css/icomoon.css'%}">
-    <link rel="stylesheet" href="{% static 'css/style.css'%}">
-	<link rel="stylesheet" href="{% static 'css/home.css'%}">
--->
-
-<!-- Load icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
     <title>Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro&display=swap" rel="stylesheet">
     {% load static %}
-<!--   <link rel="stylesheet" type="text/css" href=" {%static 'CSS/home.css' %}">-->
     <link rel="stylesheet" type="text/css" href=" {%static 'css/main.css' %}">
 
 
 </head>
 <body>
- <!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark Color">
-        <a class="navbar-brand" href="#">Job Portal</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="">Find Jobs</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item ">
-            <a class="nav-link" href="" >Submit Cv</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="">Sign In / Sign Up</a>
-            </li>
-             &lt;!&ndash;<li class="nav-item">
-            <a class="nav-link" href="">Sign Up</a>
-            </li>&ndash;&gt;
-            <li class="nav-item">
-            <a class="nav-link" href="">Post Jobs</a>
-            </li>
-        </ul>
-      </div>
-    </nav>-->
-
-	<!--  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light color" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">JobPortal</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="index.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Sign In</a></li>
-	          <li class="nav-item cta mr-md-2"><a href="new-post.html" class="nav-link">Post a Job</a></li>
-	          <li class="nav-item cta cta-colored"><a href="job-post.html" class="nav-link">Submit CV</a></li>
-
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>-->
  <div class="s013">
-      <form>
+     <form action="{%url 'home' %}" enctype="multipart/form-data" method="POST">
+         {% csrf_token %}
         <fieldset>
             <legend style="color: white"><b>Your Dream Jobs IS Waiting</b></legend>
         </fieldset>
@@ -305,7 +52,7 @@
               </div>
             </div>
           </div>
-          <button class="btn-search" type="button" >SEARCH</button>
+            <button class="btn-search" type="submit">SEARCH</button>
         </div>
       </form>
     </div>
@@ -319,60 +66,6 @@
       });
 
     </script>
-
- <!-- <footer class="text-muted copy">
-  <div class="container text-center">
-    <p>&copy;<a href=""> Job Portal</a>{% now "Y" %}</p>
-  </div>
-  </footer>-->
- <!-- <footer class="ftco-footer ftco-bg-dark ftco-section ">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p>&lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="icon-heart text-danger" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank">Jobportal</a>
-  &lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;</p>
-          </div>
-        </div>
-      </div>
-    </footer>
--->
-<!--<footer class="page-footer font-small blue ">
-
-
-  <div class="footer-copyright text-center py-3">©Copyright{% now "Y" %}:
-    <a href=""> Job Portal</a>
-  </div>
-
-
-</footer>-->
-
-  <!-- <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/jquery.timepicker.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
--->
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 {% endblock %}
 </body>
 </html>

@@ -1,120 +1,30 @@
 {% extends 'base.html' %}
 {% block content %}
 
-{% if message %}
-{{message}}
-{% endif %}
+
 
 {% if error %}
 {{error}}
 {% endif %}
-<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
 <html lang="en">
 
 <head>
-    <!-- Required meta tags-->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet" />
-
-
-    <!-- Title Page-->
     <title>Drop Resume</title>
-
-    <!-- Font special for pages-->
-    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
--->
-    <!-- Main CSS-->
     {% load static%}
-    <!--<link rel="stylesheet" href="{% static 'css/SignUpcss.css'%}">-->
-     <!--<link rel="stylesheet" href="{% static 'fonts/material-icon/css/material-design-iconic-font.min.css'%}">-->
     <link href="{% static 'css/Resume.css'%}" rel="stylesheet" media="all">
 
-<!--
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
--->
+
 
 </head>
 
 <body>
-
- <!--<nav class="navbar navbar-expand-md navbar-dark bg-dark Navigation">
-        <a class="navbar-brand" href="#">Job Portal</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="">Find Jobs</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item ">
-            <a class="nav-link" href="" >Submit Cv</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="">Sign In / Sign Up</a>
-            </li>
-             &lt;!&ndash;<li class="nav-item">
-            <a class="nav-link" href="">Sign Up</a>
-            </li>&ndash;&gt;
-            <li class="nav-item">
-            <a class="nav-link" href="">Post Jobs</a>
-            </li>
-        </ul>
-      </div>
-    </nav>-->
-
-      <!--<div class="main">
-
-        &lt;!&ndash; Sign up form &ndash;&gt;
-        <section class="signup">
-            <div class="container">
-                <div class="signup-content">
-                    <div class="signup-form">
-                        <h2 class="form-title">Drop CV</h2>
-                        <form method="POST" class="register-form" id="register-form">
-                            <div class="form-group">
-                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="Your Full Name"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="Your Email"/>
-                            </div>
-                           <div class="form-group">
-                            <div class="name">Upload CV</div>
-                            <div class="value">
-                                <div class="input-group js-input-file">
-                                    <input class="input-file" type="file" name="file_cv" id="file">
-                                    <label class="label&#45;&#45;file" for="file">Choose file</label>
-                                    <span class="input-file__info">No file chosen</span>
-                                </div>
-                                <div class="label&#45;&#45;desc">Upload your CV/Resume or any other relevant file. Max file size 50 MB</div>
-                            </div>
-                        </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
-                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
-                            </div>
-                            <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="signup-image">
-                        <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
-                        <a href="#" class="signup-image-link">I am already member</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-      </div>-->
-    <div class="page-wrapper bg-dark p-t-100 p-b-50">
+ <div class="page-wrapper bg-dark p-t-100 p-b-50">
         <div class="wrapper wrapper--w900">
             <div class="card card-6">
                 <div class="card-heading">
@@ -164,43 +74,13 @@
                     </form>
                     <h4>{{message}}</h4>
                 </div>
-               <!-- <div class="card-footer">
-                    <button class="btn btn&#45;&#45;radius-2 btn&#45;&#45;blue-2" type="submit">Upload</button>
-                </div>-->
             </div>
         </div>
     </div>
-
-<!-- <footer class="page-footer font-small blue ">
-
-
-  <div class="footer-copyright text-center py-3">©Copyright{% now "Y" %}:
-    <a href=""> Job Portal</a>
-  </div>
-
-
-</footer>-->
- <!--<footer class="ftco-footer ftco-bg-dark ftco-section ">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p>&lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="icon-heart text-danger" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank">Jobportal</a>
-  &lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;</p>
-          </div>
-        </div>
-      </div>
-    </footer>-->
-    <!-- Jquery JS-->
     {% load static%}
     <script src="{% static 'vendor/jquery/jquery.min.js'%}"></script>
-
-
-    <!-- Main JS-->
     <script src="{% static 'js/global.js' %}"></script>
 {% endblock %}
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</body>
 
 </html>
-<!-- end document-->

@@ -26,7 +26,8 @@ import Post_Job.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', Home.views.home,name='home'),
+    path('Home/', include('Home.urls')),
+    # path('', Home.views.home,name='home'),
    # path('SignUp/', Sign_Up.views.sign_up,name='SignUp'),
     #path('SignIn/', Sign_In.views.sign_in,name='SignIn'),
     path('Resume/', Drop_Cv.views.resume,name='Resume'),
